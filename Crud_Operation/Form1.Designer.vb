@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
@@ -34,12 +34,12 @@ Partial Class Form1
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnAddNew = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtPhoneNo = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtPostCode = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
+        Me.txtStudentID = New System.Windows.Forms.TextBox()
         Me.LabelPhoneNo = New System.Windows.Forms.Label()
         Me.LabelAdress = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -55,6 +55,9 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LabelDateTime = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerSerialIn = New System.Windows.Forms.Timer(Me.components)
         Me.Panel9.SuspendLayout()
         Me.Panel8.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,20 +71,20 @@ Partial Class Form1
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel9.Controls.Add(Me.TextBox2)
+        Me.Panel9.Controls.Add(Me.txtSearch)
         Me.Panel9.Location = New System.Drawing.Point(24, 12)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(276, 73)
         Me.Panel9.TabIndex = 1
         '
-        'TextBox2
+        'txtSearch
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(15, 12)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(244, 44)
-        Me.TextBox2.TabIndex = 3
-        Me.ToolTip1.SetToolTip(Me.TextBox2, "Search")
+        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(15, 12)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(244, 44)
+        Me.txtSearch.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.txtSearch, "Search")
         '
         'Panel8
         '
@@ -165,59 +168,73 @@ Partial Class Form1
         '
         'DataGridView1
         '
+        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(24, 320)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(649, 238)
         Me.DataGridView1.TabIndex = 3
         '
-        'TextBox7
+        'txtPhoneNo
         '
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(228, 259)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox7.TabIndex = 2
+        Me.txtPhoneNo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPhoneNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhoneNo.Location = New System.Drawing.Point(228, 259)
+        Me.txtPhoneNo.Name = "txtPhoneNo"
+        Me.txtPhoneNo.Size = New System.Drawing.Size(445, 44)
+        Me.txtPhoneNo.TabIndex = 2
         '
-        'TextBox5
+        'txtAddress
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(228, 159)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox5.TabIndex = 2
+        Me.txtAddress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(228, 159)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(445, 44)
+        Me.txtAddress.TabIndex = 2
         '
-        'TextBox3
+        'txtFirstName
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(228, 57)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox3.TabIndex = 2
+        Me.txtFirstName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtFirstName.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(228, 57)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(445, 44)
+        Me.txtFirstName.TabIndex = 2
         '
-        'TextBox6
+        'txtPostCode
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(228, 209)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox6.TabIndex = 2
+        Me.txtPostCode.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPostCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPostCode.Location = New System.Drawing.Point(228, 209)
+        Me.txtPostCode.Name = "txtPostCode"
+        Me.txtPostCode.Size = New System.Drawing.Size(445, 44)
+        Me.txtPostCode.TabIndex = 2
         '
-        'TextBox4
+        'txtLastName
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(228, 107)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox4.TabIndex = 2
+        Me.txtLastName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtLastName.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(228, 107)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(445, 44)
+        Me.txtLastName.TabIndex = 2
         '
-        'TextBox1
+        'txtStudentID
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(228, 7)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(445, 44)
-        Me.TextBox1.TabIndex = 2
+        Me.txtStudentID.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtStudentID.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStudentID.Location = New System.Drawing.Point(228, 7)
+        Me.txtStudentID.Name = "txtStudentID"
+        Me.txtStudentID.Size = New System.Drawing.Size(445, 44)
+        Me.txtStudentID.TabIndex = 2
         '
         'LabelPhoneNo
         '
@@ -249,6 +266,9 @@ Partial Class Form1
         Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
+        '
+        'PrintDocument1
+        '
         '
         'LabelPostCode
         '
@@ -297,12 +317,12 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.BackColor = System.Drawing.SystemColors.Control
         Me.Panel6.Controls.Add(Me.DataGridView1)
-        Me.Panel6.Controls.Add(Me.TextBox7)
-        Me.Panel6.Controls.Add(Me.TextBox5)
-        Me.Panel6.Controls.Add(Me.TextBox3)
-        Me.Panel6.Controls.Add(Me.TextBox6)
-        Me.Panel6.Controls.Add(Me.TextBox4)
-        Me.Panel6.Controls.Add(Me.TextBox1)
+        Me.Panel6.Controls.Add(Me.txtPhoneNo)
+        Me.Panel6.Controls.Add(Me.txtAddress)
+        Me.Panel6.Controls.Add(Me.txtFirstName)
+        Me.Panel6.Controls.Add(Me.txtPostCode)
+        Me.Panel6.Controls.Add(Me.txtLastName)
+        Me.Panel6.Controls.Add(Me.txtStudentID)
         Me.Panel6.Controls.Add(Me.LabelPhoneNo)
         Me.Panel6.Controls.Add(Me.LabelAdress)
         Me.Panel6.Controls.Add(Me.LabelPostCode)
@@ -316,6 +336,9 @@ Partial Class Form1
         '
         'Panel5
         '
+        Me.Panel5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel5.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel5.Controls.Add(Me.Panel6)
         Me.Panel5.Location = New System.Drawing.Point(-13, 134)
@@ -325,10 +348,12 @@ Partial Class Form1
         '
         'Label1
         '
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.GrayText
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Location = New System.Drawing.Point(-1, -1)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(993, 73)
         Me.Label1.TabIndex = 0
@@ -337,6 +362,8 @@ Partial Class Form1
         '
         'Panel2
         '
+        Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Location = New System.Drawing.Point(14, 14)
@@ -367,11 +394,27 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(1030, 100)
         Me.Panel1.TabIndex = 4
         '
+        'LabelDateTime
+        '
+        Me.LabelDateTime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LabelDateTime.AutoSize = True
+        Me.LabelDateTime.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelDateTime.Location = New System.Drawing.Point(691, 2)
+        Me.LabelDateTime.Name = "LabelDateTime"
+        Me.LabelDateTime.Size = New System.Drawing.Size(189, 12)
+        Me.LabelDateTime.TabIndex = 4
+        Me.LabelDateTime.Text = "Time 00:00:00 Date 00 mmm, 000"
+        '
+        'TimerSerialIn
+        '
+        Me.TimerSerialIn.Interval = 1000
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1004, 749)
+        Me.Controls.Add(Me.LabelDateTime)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel1)
@@ -390,11 +433,12 @@ Partial Class Form1
         Me.Panel7.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents Panel8 As Panel
     Friend WithEvents btnExit As Button
@@ -404,12 +448,12 @@ Partial Class Form1
     Friend WithEvents btnUpdate As Button
     Friend WithEvents btnAddNew As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPhoneNo As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtPostCode As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents txtStudentID As TextBox
     Friend WithEvents LabelPhoneNo As Label
     Friend WithEvents LabelAdress As Label
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
@@ -424,4 +468,7 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents LabelDateTime As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents TimerSerialIn As Timer
 End Class

@@ -20,3 +20,25 @@ E:\machine learning practice\Visual Basic\Crud_Operation\Crud_Operation\obj\Debu
 E:\machine learning practice\Visual Basic\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.exe
 E:\machine learning practice\Visual Basic\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.xml
 E:\machine learning practice\Visual Basic\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.pdb
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Crud_Operation.exe.config
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.exe
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.xml
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.pdb
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Crud_Operation.exe
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Crud_Operation.pdb
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Crud_Operation.xml
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\MySql.Data.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Google.Protobuf.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\ZstdNet.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\System.Buffers.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\bin\Debug\MySql.Data.xml
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.vbprojResolveAssemblyReference.cache
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.vbproj.Crud_Operation.exe.config
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.Form1.resources
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.Resources.resources
+C:\Users\Tayyab\Documents\Visual Studio 2015\Projects\Crud_Operation\Crud_Operation\obj\Debug\Crud_Operation.vbproj.GenerateResource.Cache
